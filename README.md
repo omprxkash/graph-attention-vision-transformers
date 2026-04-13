@@ -150,14 +150,15 @@ GemVAE's largest gains are on CITE-seq datasets (Breast Cancer, Spleen) where si
 
 ## Paper
 
-The full methodology, experiments, and ablation study are written up in the IEEE conference paper format:
+The compiled IEEE paper is included in the repository:
 
 ```
-paper/GemVAE_paper.tex   — LaTeX source
-paper/references.bib     — BibTeX references
+paper/GemVAE_Pugazhendhi_2023.pdf  — compiled research paper (PDF)
+paper/GemVAE_paper.tex             — LaTeX source
+paper/references.bib               — BibTeX references
 ```
 
-To compile locally:
+To recompile from source locally:
 ```bash
 cd paper
 pdflatex GemVAE_paper.tex && pdflatex GemVAE_paper.tex

@@ -48,6 +48,8 @@ Input image (32×32, resized to 128×128)
   Linear(256->512) -> GELU -> Dropout(0.1) -> Linear(512->100)
 ```
 
+![Architecture](figures/architecture.png)
+
 Sparse edge weight formula:
 
 ```
@@ -145,6 +147,8 @@ Training config: 100 epochs, AdamW, lr=1e-3, batch 64–128, 128×128 input.
 | GAT-ViT | — | — | ~12 | 100% baseline |
 | **Sparse-GAT-ViT** | **—** | **—** | **~12** | **~50% of dense** |
 | DeiT-Small | — | — | 22 | — |
+
+![Baseline Comparison](figures/baseline_comparison.png)
 
 Fill in Top-1 and Top-5 after running `src/evaluate.py` on your trained checkpoints.
 Expected ranges with this setup: ViT-Small ~38–42%, GAT-ViT ~41–45%, Sparse-GAT-ViT ~42–46%, DeiT-Small ~40–44%.
